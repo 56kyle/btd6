@@ -44,6 +44,8 @@ sphinx-click = ">=3.0.2"
 typeguard = ">=2.13.3"
 xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
+nox = "^2022.8.7"
+nox-poetry = "^1.0.1"
 
 [tool.poetry.scripts]
 btd6 = "btd6.__main__:main"
