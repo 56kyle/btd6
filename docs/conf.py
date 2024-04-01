@@ -1,7 +1,8 @@
 """Sphinx configuration."""
-project = "btd6"
+
+project = "Btd6"
 author = "Kyle Oliver"
-copyright = "2022, Kyle Oliver"
+copyright = "2024, Kyle Oliver"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",

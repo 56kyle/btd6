@@ -1,8 +1,8 @@
-# btd6
+# Btd6
 
-[![PyPI](https://img.shields.io/pypi/v/btd6.svg)][pypi_]
-[![Status](https://img.shields.io/pypi/status/btd6.svg)][status]
-[![Python Version](https://img.shields.io/pypi/pyversions/btd6)][python version]
+[![PyPI](https://img.shields.io/pypi/v/btd6.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/btd6.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/btd6)][pypi status]
 [![License](https://img.shields.io/pypi/l/btd6)][license]
 
 [![Read the documentation at https://btd6.readthedocs.io/](https://img.shields.io/readthedocs/btd6/latest.svg?label=Read%20the%20Docs)][read the docs]
@@ -12,9 +12,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 
-[pypi_]: https://pypi.org/project/btd6/
-[status]: https://pypi.org/project/btd6/
-[python version]: https://pypi.org/project/btd6
+[pypi status]: https://pypi.org/project/btd6/
 [read the docs]: https://btd6.readthedocs.io/
 [tests]: https://github.com/56kyle/btd6/actions?workflow=Tests
 [codecov]: https://app.codecov.io/gh/56kyle/btd6
@@ -31,7 +29,7 @@
 
 ## Installation
 
-You can install _btd6_ via [pip] from [PyPI]:
+You can install _Btd6_ via [pip] from [PyPI]:
 
 ```console
 $ pip install btd6
@@ -49,7 +47,7 @@ To learn more, see the [Contributor Guide].
 ## License
 
 Distributed under the terms of the [MIT license][license],
-_btd6_ is free and open source software.
+_Btd6_ is free and open source software.
 
 ## Issues
 
