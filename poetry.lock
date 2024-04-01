@@ -633,6 +633,27 @@ restructuredtext-lint = "*"
 develop = ["build", "twine"]
 
 [[package]]
+name = "frida"
+version = "16.2.1"
+description = "Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "frida-16.2.1-cp37-abi3-macosx_10_9_x86_64.whl", hash = "sha256:df1cc56a494aa045bf3b48a6609658b992801b41b929e9013c7319b8301c6450"},
+    {file = "frida-16.2.1-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:2bf69733d56d6d15260f94a4b68551d758c77e3dd36ad5a71df18ba9852e44ce"},
+    {file = "frida-16.2.1-cp37-abi3-manylinux_2_17_aarch64.whl", hash = "sha256:4b4db71b9317086ad188f91de8b00aceb9fd8a4d89c353bd06587eaf6bb410a2"},
+    {file = "frida-16.2.1-cp37-abi3-manylinux_2_17_armv7l.whl", hash = "sha256:e15d612767493b29795522ee3e763b2dfcf8610dab8a1e337b936adc55991c55"},
+    {file = "frida-16.2.1-cp37-abi3-manylinux_2_5_i686.whl", hash = "sha256:51ca64ffd29c6df70429e2d96a6651f3d0a752223f55a0187181370391a28cba"},
+    {file = "frida-16.2.1-cp37-abi3-manylinux_2_5_x86_64.whl", hash = "sha256:2b549a18bfd09e5b67168bc890cfdc53b3ca01eb9fab99b0d06c3ffc530788ec"},
+    {file = "frida-16.2.1-cp37-abi3-win32.whl", hash = "sha256:ee3e63fa16bf494f840bcacaa955a6a2e793a25f84dc3ea5bd92885f8526aa7a"},
+    {file = "frida-16.2.1-cp37-abi3-win_amd64.whl", hash = "sha256:0363340ab678b75045426529b4a7061b32f8095c01ae0e196f8764e9ee404e26"},
+    {file = "frida-16.2.1.tar.gz", hash = "sha256:64a011825ea21a5ed3e3d7589f04c1dec473e1a083beb4c57895dddf32caa7c9"},
+]
+
+[package.dependencies]
+typing-extensions = {version = "*", markers = "python_version < \"3.11\""}
+
+[[package]]
 name = "furo"
 version = "2024.1.29"
 description = "A clean customisable Sphinx documentation theme."
@@ -1919,4 +1940,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "aa933c57aaaf9f40f90123cfd31029f5952166df8e03163a23e124e4b0985939"
+content-hash = "b762a16c85e6d863f70c29cda79649fd291a22de74e6326a326a9ba6e63cc058"
