@@ -1,0 +1,19 @@
+{
+  "_commit": "2f163be8c7ff28302f68abfa5312d3e50bea9eff",
+  "_template": "https://github.com/56kyle/cookiecutter-robust-python",
+  "add_rust_extension": true,
+  "author": "Kyle Oliver",
+  "copyright_year": "2025",
+  "development_status": "Development Status :: 1 - Planning",
+  "email": "56kyleoliver@gmail.com",
+  "friendly_name": "Btd6",
+  "license": "MIT",
+  "max_python_version": "3.13",
+  "min_python_version": "3.9",
+  "package_name": "btd6",
+  "project_name": "btd6",
+  "repository_host": "github.com",
+  "repository_path": "56kyle/btd6",
+  "repository_provider": "github",
+  "version": "0.0.0"
+}

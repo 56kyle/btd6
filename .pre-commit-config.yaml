@@ -1,0 +1,70 @@
+# .pre-commit-config.yaml
+# See https://pre-commit.com/
+default_stages: [pre-commit]
+
+repos:
+  - repo: local
+    hooks:
+      - id: check-added-large-files
+        name: Check for added large files
+        entry: check-added-large-files
+        language: system
+      - id: check-toml
+        name: Check Toml
+        entry: check-toml
+        language: system
+        types: [toml]
+      - id: check-yaml
+        name: Check Yaml
+        entry: check-yaml
+        language: system
+        types: [yaml]
+      - id: end-of-file-fixer
+        name: Fix End of Files
+        entry: end-of-file-fixer
+        language: system
+        types: [text]
+        stages: [pre-commit, pre-push, manual]
+      - id: trailing-whitespace
+        name: Trim Trailing Whitespace
+        entry: trailing-whitespace-fixer
+        language: system
+        types: [text]
+        stages: [pre-commit, pre-push, manual]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.11
+    hooks:
+      - id: ruff-format
+        args: [--config=.ruff.toml]
+        name: Ruff Format
+
+      - id: ruff-check
+        args: [--fix, --diff, --exit-non-zero-on-fix, --config=.ruff.toml]
+        name: Ruff Check
+
+  - repo: https://github.com/doublify/pre-commit-rust
+    rev: master
+    hooks:
+      - id: fmt
+        name: Rust Format
+      - id: clippy
+        args: ["--all-features", "--", "--write"]
+        name: Clippy
+      - id: cargo-check
+        name: Cargo Check
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.6.0
+    hooks:
+      - id: prettier
+        name: Prettier
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.8.2
+    hooks:
+      - id: commitizen
+        name: Commitizen
+      - id: commitizen-branch
+        name: Commitizen Branch
+        stages: [commit-msg]
